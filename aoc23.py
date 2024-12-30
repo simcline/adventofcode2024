@@ -7,20 +7,8 @@ with open('aoc23.txt') as f:
 #part 1
 
 cnxions = defaultdict(set)
-# networks = []
 
 for cn in l:
-    # is_inserted = False
-    # for net in networks:
-    #     if cn[0] in net:
-    #         net.add(cn[1])
-    #         is_inserted = True
-    #     elif cn[1] in net:
-    #         net.add(cn[1])
-    #         is_inserted = True
-    # if not is_inserted:
-    #     networks.append({cn[0], cn[1]})
-
     cnxions[cn[0]].add(cn[1])
     cnxions[cn[1]].add(cn[0])
 
